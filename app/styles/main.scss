@@ -4,19 +4,23 @@ $icon-font-path: '../fonts/';
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 
 // endbower
+.stats {
+  width: 100%;
+  .pin, .heart, .heart-red{
+    display: inline-block;
+  }
+  .pin .fa-thumb-tack{
+    color: yellow;
+  }
 
-.fa-thumb-tack{
-  color: yellow;
+  .heart .fa-heart {
+    color: white;
+  }
+
+  .heart-red .fa-heart{
+    color: red;
+  }
 }
-
-.heart .fa-heart {
-  color: white;
-}
-
-.heart-red .fa-heart{
-  color: red;
-}
-
 li {
   list-style: none;
 }
