@@ -4,9 +4,23 @@ $icon-font-path: '../fonts/';
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 
 // endbower
+
+.fa-thumb-tack{
+  color: yellow;
+}
+
+.heart .fa-heart {
+  color: white;
+}
+
+.heart-red .fa-heart{
+  color: red;
+}
+
 li {
   list-style: none;
 }
+
 .top {
   background: url("../images/RedBrickWall.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -14,6 +28,7 @@ li {
   -o-background-size: cover;
   background-size: cover;
 }
+
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
