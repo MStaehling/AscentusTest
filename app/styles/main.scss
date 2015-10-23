@@ -205,6 +205,17 @@ $icon-font-path: '../fonts/';
           background-image: url("https://images.unsplash.com/photo-1445437303333-50e823122ca6?q=80&fm=jpg&s=446e576c21b6158089d5edca174dcba6");
           height: 325px;
         }
+        .comments{
+          background-color: #F5F5F5;
+          color: black;
+          margin-top: 20px;
+          p {
+            width: 80%;
+            margin-left: 10%;
+            border-bottom: solid 1px lightgrey;
+            padding: 10px 0;
+          }
+        }
       }
     }
   }
