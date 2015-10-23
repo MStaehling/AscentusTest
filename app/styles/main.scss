@@ -132,7 +132,8 @@ $icon-font-path: '../fonts/';
   section {
     position: relative;
     margin-left: 33%;
-background-color: #ebedeb;
+    background-color: #ebedeb;
+
     //float: right;
     width: 67%;
     display: inline-block;
@@ -142,6 +143,8 @@ background-color: #ebedeb;
       ul {
         display: inline-block;
       }
+      
+      //note to self: eventually move this li out so it targets all the li's in the .header
       li {
         padding: 10px;
         color: lightgrey;
@@ -153,11 +156,13 @@ background-color: #ebedeb;
         float: right;
         padding-right: 20px;
         li {
+
         }
       }
     }
     #portfolio {
       padding: 10px;
+
       //background-color: #ebedeb;
       color: white;
       .pic {
