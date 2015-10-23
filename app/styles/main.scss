@@ -46,8 +46,10 @@ $icon-font-path: '../fonts/';
       }
       &.notice {
         position: relative;
+
         //background-color: pink;
-        a{
+        a {
+
           //background-color: green;
           &::after {
             position: absolute;
@@ -186,9 +188,21 @@ $icon-font-path: '../fonts/';
       }
     }
     .bottom-aside {
+
       div {
+        margin: 0;
+        padding: 10px;
+        &.left {
+          margin-right: 49.75%;
+          border-right: solid 1px lightgrey;
+        }
+        &.right {
+          margin-left: 49.75%;
+          border-left: solid 1px lightgrey;
+        }
         p {
-          width: 49%;
+
+          //width: 49%;
           &.time {
             color: grey;
           }
