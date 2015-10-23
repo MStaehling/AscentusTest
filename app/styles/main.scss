@@ -14,7 +14,6 @@ $icon-font-path: '../fonts/';
   .pin, .heart, .heart-red{
     display: inline-block;
     padding: 15px 7px;
-  //float: right;
   }
 
   .fa {
@@ -43,6 +42,7 @@ $icon-font-path: '../fonts/';
   background-size: cover;
   padding-left: 30px;
   padding-bottom: 50px;
+  color: white;
 
   p {
 
@@ -51,6 +51,22 @@ $icon-font-path: '../fonts/';
     font-size: 3.5pc;
   }
 }
+
+//aside
+.bottom {
+  width: 100%;
+  //margin-top: -20px;
+  box-sizing: border-box;
+  #left {
+    width: 33%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+
+  }
+}
+
 
 li {
   list-style: none;
