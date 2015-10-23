@@ -143,11 +143,15 @@ $icon-font-path: '../fonts/';
       padding: 10px;
       background-color: #EBEDEB;
       color: white;
+      .pic {
+      //  margin: 10px;
+        padding: -10px;
+      }
       #pf-left {
         width: 66%;
         display: inline-block;
         .pairs {
-
+padding: 10px;
           #img1 {
             background-image: url("https://images.unsplash.com/photo-1445462657202-a0893228a1e1?q=80&fm=jpg&s=4681429f905b5b350f213478c1fe6084");
             -webkit-background-size: cover;
@@ -187,6 +191,7 @@ $icon-font-path: '../fonts/';
           }
         }
         .single {
+          padding: 10px;
           #img3 {
             background-image: url("https://images.unsplash.com/photo-1445445290350-18a3b86e0b5a?q=80&fm=jpg&s=4ca5b01c43928584a67189ea20c0375f");
             -webkit-background-size: cover;
@@ -200,6 +205,7 @@ $icon-font-path: '../fonts/';
         display: inline-block;
         width: 33%;
         position: absolute;
+        padding: 10px;
         #img6 {
           background-image: url("https://images.unsplash.com/photo-1445437303333-50e823122ca6?q=80&fm=jpg&s=446e576c21b6158089d5edca174dcba6");
           -webkit-background-size: cover;
