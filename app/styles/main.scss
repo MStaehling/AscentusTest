@@ -62,8 +62,21 @@ $icon-font-path: '../fonts/';
     background-color: black;
     color: white;
     text-align: center;
-    padding: 20px;
-
+    padding: 30px;
+    //box-sizing: border-box;
+    .mid-aside {
+      //width: 100%;
+      border-top: solid 1px grey;
+      border-bottom: solid 1px grey;
+    //  box-sizing: border-box;
+      #stories, #followers {
+        display: inline-block;
+        padding: 10px;
+        width: 49%;
+        text-align: center;
+        //box-sizing: border-box;
+      }
+    }
   }
 }
 
