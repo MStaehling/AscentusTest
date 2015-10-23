@@ -6,6 +6,9 @@ $icon-font-path: '../fonts/';
 // endbower
 
 //pins on images
+.fa {
+  padding-right: 8px;
+}
 .stats {
   width: 100%;
   height: 170px;
@@ -16,9 +19,7 @@ $icon-font-path: '../fonts/';
     padding: 15px 7px;
   }
 
-  .fa {
-    padding-right: 8px;
-  }
+
   .pin .fa-thumb-tack{
     color: yellow;
   }
@@ -70,6 +71,20 @@ $icon-font-path: '../fonts/';
       margin-top: 20px;
       margin-bottom: 20px;
       padding: 5px 0;
+      &.mail {
+        background-color: black;
+        border: solid 1px grey;
+        span, i {
+          color: grey;
+        }
+      }
+      &.follow {
+        background-color: #00A46C;
+        border-color: #00A46C;
+        i {
+          color: #004F34;
+        }
+      }
     }
     .mid-aside {
       //width: 100%;
