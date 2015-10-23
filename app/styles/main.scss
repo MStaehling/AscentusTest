@@ -145,13 +145,15 @@ $icon-font-path: '../fonts/';
         width: 66%;
         display: inline-block;
         .pairs {
-          width: 49%;
+
           #img1 {
             background-image: url("https://images.unsplash.com/photo-1445462657202-a0893228a1e1?q=80&fm=jpg&s=4681429f905b5b350f213478c1fe6084");
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
+            display: inline-block;
+            width: 49.5%;
           }
           #img2 {
             background-image: url("https://images.unsplash.com/photo-1445459317604-f36c392c4142?q=80&fm=jpg&s=3ba722a6ec3587dbf97ebba04c3b5c62");
@@ -159,6 +161,9 @@ $icon-font-path: '../fonts/';
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
+            display: inline-block;
+            float: right;
+            width: 49.5%;
           }
           #img4 {
             background-image: url("https://images.unsplash.com/photo-1445452916036-9022dfd33aa8?q=80&fm=jpg&s=113ec033964ef7ce1191b6af54c7509a");
@@ -166,6 +171,8 @@ $icon-font-path: '../fonts/';
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
+            display: inline-block;
+            width: 49.5%;
           }
           #img5 {
             background-image: url("https://images.unsplash.com/photo-1445450722870-076060f42fb1?q=80&fm=jpg&s=20dd0233dda38903bcf546c39a6c3180");
@@ -173,6 +180,8 @@ $icon-font-path: '../fonts/';
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
+            display: inline-block;
+            width: 49.5%;
           }
         }
         .single {
@@ -186,6 +195,7 @@ $icon-font-path: '../fonts/';
         }
       }
       #pf-right {
+        display: inline-block;
         width: 33%;
         #img6 {
           background-image: url("https://images.unsplash.com/photo-1445437303333-50e823122ca6?q=80&fm=jpg&s=446e576c21b6158089d5edca174dcba6");
