@@ -126,6 +126,13 @@ $icon-font-path: '../fonts/';
     position: absolute;
 
     //box-sizing: border-box;
+    img {
+      -moz-border-radius: 75px;
+      -webkit-border-radius: 75px;
+      border-radius: 100px;
+      width: 150px;
+      height: 150px;
+    }
     button {
       width: 49%;
       border-radius: 20px;
