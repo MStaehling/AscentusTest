@@ -69,6 +69,19 @@ $icon-font-path: '../fonts/';
       border-top: solid 1px grey;
       border-bottom: solid 1px grey;
     //  box-sizing: border-box;
+    ul{
+      .title {
+
+      }
+      .amount {
+        font-size: 2pc;
+        strong {
+          small {
+          font-size: 1.2pc;
+          }
+        }
+      }
+    }
       #stories, #followers {
         display: inline-block;
         padding: 10px;
