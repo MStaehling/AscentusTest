@@ -29,6 +29,43 @@ $icon-font-path: '../fonts/';
     color: red;
   }
 }
+.header {
+  ul {
+    li {
+      display: inline-block;
+      padding: 10px;
+      &.active {
+        a {
+          color: black;
+        }
+      }
+      &.notice {
+        position: relative;
+        //background-color: pink;
+        a{
+          //background-color: green;
+          &::after {
+            position: absolute;
+            content: " ";
+            background-color: lightblue;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            border-radius: 3px;
+            width: 6px;
+            height: 6px;
+            top: 20%;
+            margin-left: 3px;
+          }
+        }
+      }
+      a {
+        padding: 10px;
+        color: lightgrey;
+        position: relative;
+      }
+    }
+  }
+}
 
 // Top Section
 .top {
@@ -155,7 +192,7 @@ $icon-font-path: '../fonts/';
         &.active {
           color: black;
           &::after {
-            content: '';
+            content: " ";
             position: absolute;
             left: 20%;
             top: 95%;
