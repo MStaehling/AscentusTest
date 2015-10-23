@@ -51,7 +51,7 @@ $icon-font-path: '../fonts/';
 //aside
 .bottom {
   width: 100%;
-
+position: relative;
   //margin-top: -20px;
   box-sizing: border-box;
   #left-aside {
@@ -60,7 +60,9 @@ $icon-font-path: '../fonts/';
     color: white;
     text-align: center;
     padding: 30px;
-
+    display: inline-block;
+    height: 100%;
+    position: absolute;
     //box-sizing: border-box;
     button {
       width: 49%;
@@ -125,7 +127,15 @@ $icon-font-path: '../fonts/';
       }
     }
   }
+  section {
+    position: relative;
+    margin-left: 33%;
+    //float: right;
+    width: 66%;
+    display: inline-block;
+  }
 }
+
 li {
   list-style: none;
 }
