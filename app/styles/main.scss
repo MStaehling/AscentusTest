@@ -64,6 +64,12 @@ $icon-font-path: '../fonts/';
     text-align: center;
     padding: 30px;
     //box-sizing: border-box;
+    button {
+      width: 49%;
+      border-radius: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
     .mid-aside {
       //width: 100%;
       border-top: solid 1px grey;
