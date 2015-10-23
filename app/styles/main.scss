@@ -70,6 +70,21 @@ $icon-font-path: '../fonts/';
       }
     }
   }
+  nav {
+    padding: 20px;
+    i {
+      vertical-align: middle;
+      &.fa-search {
+        color: lightgrey;
+      }
+      &.fa-plus-circle {
+        color: red;
+      }
+      &.fa-globe {
+        color: green;
+      }
+    }
+  }
 }
 
 // Top Section
