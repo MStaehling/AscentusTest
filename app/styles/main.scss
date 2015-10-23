@@ -4,7 +4,6 @@ $icon-font-path: '../fonts/';
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 
 // endbower
-
 //pins on images
 .fa {
   padding-right: 8px;
@@ -14,27 +13,24 @@ $icon-font-path: '../fonts/';
   height: 170px;
   text-align: right;
   padding-right: 15px;
-  .pin, .heart, .heart-red{
+  .pin,
+  .heart,
+  .heart-red {
     display: inline-block;
     padding: 15px 7px;
   }
-
-
-  .pin .fa-thumb-tack{
+  .pin .fa-thumb-tack {
     color: yellow;
   }
-
   .heart .fa-heart {
     color: white;
   }
-
-  .heart-red .fa-heart{
+  .heart-red .fa-heart {
     color: red;
   }
 }
 
 // Top Section
-
 .top {
   background: url("../images/RedBrickWall.jpg") no-repeat center center;
   -webkit-background-size: cover;
@@ -44,7 +40,6 @@ $icon-font-path: '../fonts/';
   padding-left: 30px;
   padding-bottom: 50px;
   color: white;
-
   p {
 
   }
@@ -56,14 +51,16 @@ $icon-font-path: '../fonts/';
 //aside
 .bottom {
   width: 100%;
+
   //margin-top: -20px;
   box-sizing: border-box;
-  #left {
+  #left-aside {
     width: 33%;
     background-color: black;
     color: white;
     text-align: center;
     padding: 30px;
+
     //box-sizing: border-box;
     button {
       width: 49%;
@@ -74,52 +71,64 @@ $icon-font-path: '../fonts/';
       &.mail {
         background-color: black;
         border: solid 1px grey;
-        span, i {
+        span,
+        i {
           color: grey;
         }
       }
       &.follow {
-        background-color: #00A46C;
-        border-color: #00A46C;
+        background-color: #00a46c;
+        border-color: #00a46c;
         i {
-          color: #004F34;
+          color: #004f34;
         }
       }
     }
     .mid-aside {
+
       //width: 100%;
       border-top: solid 1px grey;
       border-bottom: solid 1px grey;
-    //  box-sizing: border-box;
-    ul{
-      .title {
 
-      }
-      .amount {
-        font-size: 2pc;
-        strong {
-          small {
-          font-size: 1.2pc;
+      //  box-sizing: border-box;
+      ul {
+        .title {
+
+        }
+        .amount {
+          font-size: 2pc;
+          strong {
+            small {
+              font-size: 1.2pc;
+            }
           }
         }
       }
-    }
-      #stories, #followers {
+      #stories,
+      #followers {
         display: inline-block;
         padding: 10px;
         width: 49%;
         text-align: center;
+
         //box-sizing: border-box;
+      }
+    }
+    .bottom-aside {
+      div {
+        p {
+          width: 49%;
+          &.time {
+            color: grey;
+          }
+        }
       }
     }
   }
 }
-
-
 li {
   list-style: none;
 }
-
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -198,7 +207,8 @@ body {
 
   /* Space out the masthead */
   .header {
-  //  margin-bottom: 30px;
+
+    //  margin-bottom: 30px;
   }
 
   /* Remove the bottom border on the jumbotron for visual effect */
