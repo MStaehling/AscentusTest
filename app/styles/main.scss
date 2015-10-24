@@ -29,6 +29,65 @@ $icon-font-path: '../fonts/';
     color: red;
   }
 }
+.header {
+  img {
+    display: inline-block;
+    margin: 10px 0 20px 20px;
+  }
+  ul {
+    display: inline-block;
+    li {
+      display: inline-block;
+      padding: 10px;
+      &.active {
+        a {
+          color: black;
+        }
+      }
+      &.notice {
+        position: relative;
+
+        //background-color: pink;
+        a {
+
+          //background-color: green;
+          &::after {
+            position: absolute;
+            content: " ";
+            background-color: lightblue;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            border-radius: 3px;
+            width: 6px;
+            height: 6px;
+            top: 20%;
+            margin-left: 3px;
+          }
+        }
+      }
+      a {
+        padding: 10px;
+        color: lightgrey;
+        position: relative;
+      }
+    }
+  }
+  nav {
+    padding: 20px;
+    i {
+      vertical-align: middle;
+      &.fa-search {
+        color: lightgrey;
+      }
+      &.fa-plus-circle {
+        color: red;
+      }
+      &.fa-globe {
+        color: green;
+      }
+    }
+  }
+}
 
 // Top Section
 .top {
@@ -45,6 +104,9 @@ $icon-font-path: '../fonts/';
   }
   h1 {
     font-size: 3.5pc;
+  }
+  #slide {
+    text-align: center;
   }
 }
 
@@ -66,6 +128,13 @@ $icon-font-path: '../fonts/';
     position: absolute;
 
     //box-sizing: border-box;
+    img {
+      -moz-border-radius: 75px;
+      -webkit-border-radius: 75px;
+      border-radius: 100px;
+      width: 150px;
+      height: 150px;
+    }
     button {
       width: 49%;
       border-radius: 20px;
@@ -119,9 +188,43 @@ $icon-font-path: '../fonts/';
       }
     }
     .bottom-aside {
+
       div {
+        margin: 0;
+        padding: 10px;
+        &.left {
+          margin-right: 49.75%;
+          border-right: solid 1px lightgrey;
+          position: relative;
+          display: inline-block;
+          &::before {
+            content: 'k';
+            color: black;
+            position: absolute;
+            border-right: solid 1px black;
+            width: 10px;
+            top: 0;
+            right: -1px;
+          }
+          i {
+            position: absolute;
+            top: 15px;
+            right: -14px;
+          }
+        }
+        &.right {
+          margin-left: 49.8%;
+          border-left: solid 1px lightgrey;
+          position: relative;
+          i {
+           position: absolute;
+            top: 15px;
+            left: -6px;
+          }
+        }
         p {
-          width: 49%;
+
+          //width: 49%;
           &.time {
             color: grey;
           }
@@ -155,7 +258,7 @@ $icon-font-path: '../fonts/';
         &.active {
           color: black;
           &::after {
-            content: '';
+            content: " ";
             position: absolute;
             left: 20%;
             top: 95%;
