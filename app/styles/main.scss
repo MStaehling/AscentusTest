@@ -196,6 +196,7 @@ $icon-font-path: '../fonts/';
           margin-right: 49.75%;
           border-right: solid 1px lightgrey;
           position: relative;
+          display: inline-block;
           &::before {
             content: 'k';
             color: black;
@@ -205,10 +206,21 @@ $icon-font-path: '../fonts/';
             top: 0;
             right: -1px;
           }
+          i {
+            position: absolute;
+            top: 15px;
+            right: -14px;
+          }
         }
         &.right {
-          margin-left: 49.75%;
+          margin-left: 49.8%;
           border-left: solid 1px lightgrey;
+          position: relative;
+          i {
+           position: absolute;
+            top: 15px;
+            left: -6px;
+          }
         }
         p {
 
