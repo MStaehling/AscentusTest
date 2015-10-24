@@ -195,6 +195,16 @@ $icon-font-path: '../fonts/';
         &.left {
           margin-right: 49.75%;
           border-right: solid 1px lightgrey;
+          position: relative;
+          &::before {
+            content: 'k';
+            color: black;
+            position: absolute;
+            border-right: solid 1px black;
+            width: 10px;
+            top: 0;
+            right: -1px;
+          }
         }
         &.right {
           margin-left: 49.75%;
