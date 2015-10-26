@@ -266,12 +266,22 @@ a {
       }
     }
     .bottom-aside {
+      position: relative;
+      &::before {
+        content: ' ';
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        height: 100%;
+        width: 1px;
+        background-color: white;
+      }
       div {
         margin: 0;
         padding: 10px;
         &.left {
           margin-right: 49.75%;
-          border-right: solid 1px lightgrey;
+          //border-right: solid 1px lightgrey;
           position: relative;
           display: inline-block;
           &::before {
@@ -291,12 +301,12 @@ a {
         }
         &.right {
           margin-left: 49.8%;
-          border-left: solid 1px lightgrey;
+          // border-left: solid 1px lightgrey;
           position: relative;
           i {
             position: absolute;
             top: 15px;
-            left: -6px;
+            left: -5px;
           }
         }
         p {
