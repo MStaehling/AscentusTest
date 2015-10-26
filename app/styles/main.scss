@@ -29,7 +29,6 @@ $icon-font-path: '../fonts/';
     color: red;
   }
 }
-
 a {
   text-decoration: none;
   &:hover {
@@ -43,66 +42,6 @@ a {
     display: inline-block;
     margin: 10px 0 20px 20px;
   }
-  #inbox {
-    background-color: lightgreen;
-    width: 400px;
-    font-size: .75pc;
-    border-radius: 10px;
-    z-index: 1;
-    position: absolute;
-    left: 20%;
-    margin-top: 45px;
-    .e-mail {
-      margin: 0 30px;
-      border-bottom: solid 1px lightgrey;
-      padding-top: 20px;
-      img {
-        width: 50px;
-        display: inline-block;
-        margin: 0;
-        height: 50px;
-        border-radius: 25px;
-        // margin-bottom: 10px;
-      }
-      .inbox-header {
-        display: inline-block;
-        width: 80%;
-        float: right;
-        position: relative;
-        h5 {
-          display: inline-block;
-          font-size: .75pc;
-          margin: 0;
-          &.time {
-            color: lightgrey;
-            float: right;
-          }
-        }
-        p {
-          // position: absolute;
-          width: 100%;
-          padding-top: 10px;
-        }
-      }
-
-    }
-    .footer {
-      position: relative;
-      background-color: darkgrey;
-      padding: 5px 15px 40px;
-      border-bottom-left-radius: 10px;
-      border-bottom-right-radius: 10px;
-      span{
-        color: lightgrey;
-        width: 100%;
-        margin: 10px;
-        text-align: center;
-        float: right;
-        vertical-align: middle;
-        // position: absolute;
-      }
-    }
-  }
   ul {
     display: inline-block;
     li {
@@ -115,11 +54,7 @@ a {
       }
       &.notice {
         position: relative;
-
-        //background-color: pink;
         a {
-
-          //background-color: green;
           &::after {
             position: absolute;
             content: " ";
@@ -138,6 +73,90 @@ a {
         padding: 10px;
         color: lightgrey;
         position: relative;
+      }
+      &#inbox {
+        a {
+          #hover-inbox {
+            display: none;
+            background-color: lightgreen;
+            width: 400px;
+            font-size: 0.75pc;
+            border-radius: 10px;
+            z-index: 1;
+            position: absolute;
+            left: -300%;
+            margin-top: 45px;
+            background-color: white;
+            #inbox-arrow {
+              content: " ";
+              position: absolute;
+              left: 44%;
+              top: -20px;
+              width: 0;
+              height: 0;
+              border-left: 20px solid transparent;
+              border-right: 20px solid transparent;
+              border-bottom: 20px solid white;
+            }
+            .e-mail {
+              margin: 0 30px;
+              border-bottom: solid 1px lightgrey;
+              padding-top: 20px;
+              img {
+                width: 50px;
+                display: inline-block;
+                margin: 0;
+                height: 50px;
+                border-radius: 25px;
+              }
+              .inbox-header {
+                display: inline-block;
+                width: 80%;
+                float: right;
+                position: relative;
+                h5 {
+                  display: inline-block;
+                  font-size: 0.75pc;
+                  margin: 0;
+                  color: black;
+                  &.time {
+                    color: lightgrey;
+                    float: right;
+                  }
+                }
+                p {
+                  color: black;
+                  width: 100%;
+                  padding-top: 10px;
+                }
+              }
+            }
+            .footer {
+              position: relative;
+              background-color: darkgrey;
+              padding: 5px 15px 40px;
+              border-bottom-left-radius: 10px;
+              border-bottom-right-radius: 10px;
+              span {
+                color: lightgrey;
+                width: 100%;
+                margin: 10px;
+                text-align: center;
+                float: right;
+                vertical-align: middle;
+
+                // position: absolute;
+              }
+            }
+          }
+        }
+        &:hover {
+          a {
+            #hover-inbox {
+              display: block;
+            }
+          }
+        }
       }
     }
   }
@@ -183,8 +202,6 @@ a {
 .bottom {
   width: 100%;
   position: relative;
-
-  //margin-top: -20px;
   box-sizing: border-box;
   #left-aside {
     width: 33%;
@@ -195,8 +212,6 @@ a {
     display: inline-block;
     height: 100%;
     position: absolute;
-
-    //box-sizing: border-box;
     img {
       -moz-border-radius: 75px;
       -webkit-border-radius: 75px;
@@ -227,12 +242,8 @@ a {
       }
     }
     .mid-aside {
-
-      //width: 100%;
       border-top: solid 1px grey;
       border-bottom: solid 1px grey;
-
-      //  box-sizing: border-box;
       ul {
         .title {
 
@@ -252,8 +263,6 @@ a {
         padding: 10px;
         width: 49%;
         text-align: center;
-
-        //box-sizing: border-box;
       }
     }
     .bottom-aside {
@@ -291,8 +300,6 @@ a {
           }
         }
         p {
-
-          //width: 49%;
           &.time {
             color: grey;
           }
@@ -304,8 +311,6 @@ a {
     position: relative;
     margin-left: 33%;
     background-color: #ebedeb;
-
-    //float: right;
     width: 67%;
     display: inline-block;
     .header {
@@ -363,8 +368,6 @@ a {
     }
     #portfolio {
       padding: 10px;
-
-      //background-color: #ebedeb;
       color: white;
       .pic {
         -webkit-background-size: cover;
@@ -373,8 +376,6 @@ a {
         background-size: cover;
         position: relative;
         height: 200px;
-
-        //  margin: 10px;
         padding: -10px;
         span {
           font-size: 2pc;
@@ -395,8 +396,6 @@ a {
           .pic {
             display: inline-block;
             width: 200px;
-
-            //width: 49.5%;
           }
           #img1 {
             background-image: url("https://images.unsplash.com/photo-1445462657202-a0893228a1e1?q=80&fm=jpg&s=4681429f905b5b350f213478c1fe6084");
@@ -430,9 +429,6 @@ a {
           height: 325px;
           color: white;
           position: relative;
-
-          // text-align: center;
-          //vertical-align: middle;
           &::after {
             content: '\A';
             position: absolute;
