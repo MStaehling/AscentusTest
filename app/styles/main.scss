@@ -48,9 +48,12 @@ a {
     width: 400px;
     font-size: .75pc;
     border-radius: 10px;
-    //height: 400px;;
+    z-index: 1;
+    position: absolute;
+    left: 20%;
+    margin-top: 45px;
     .e-mail {
-      margin: 20px 30px 0;
+      margin: 0 30px;
       border-bottom: solid 1px lightgrey;
       padding-top: 20px;
       img {
@@ -59,7 +62,7 @@ a {
         margin: 0;
         height: 50px;
         border-radius: 25px;
-        margin-bottom: 35px;
+        // margin-bottom: 10px;
       }
       .inbox-header {
         display: inline-block;
@@ -69,7 +72,7 @@ a {
         h5 {
           display: inline-block;
           font-size: .75pc;
-        //  position: absolute;
+          margin: 0;
           &.time {
             color: lightgrey;
             float: right;
@@ -77,29 +80,26 @@ a {
         }
         p {
           // position: absolute;
-          clear: top;
           width: 100%;
-          padding-top: 20px;
+          padding-top: 10px;
         }
       }
 
     }
     .footer {
-      // text-align: center;
-      // width: 100%;
-      // position: relative;
+      position: relative;
       background-color: darkgrey;
-      vertical-align: middle;
-      padding: 15px;
+      padding: 5px 15px 40px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
       span{
         color: lightgrey;
         width: 100%;
-        text-align: right;
         margin: 10px;
         text-align: center;
         float: right;
+        vertical-align: middle;
         // position: absolute;
-        //right: 200px;
       }
     }
   }
