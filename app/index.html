@@ -32,12 +32,37 @@
   <div class="">
     <div class="header">
       <img src="../images/explore_outdoors_icon.png" alt="logo" width="25px" height="30px">
-      <ul class="nav">
+      <ul>
         <li><a href="#">overview</a></li>
         <li class="active"><a href="#">friends</a></li>
         <li class="notice"><a href="#">your board</a></li>
-        <li><a href="#">inbox</a></li>
+        <li id="inbox"><a href="#">inbox
+          <div id="hover-inbox">
+            <div id="inbox-arrow"></div>
+            <nav class="e-mail">
+              <img src="http://www.cinemablend.com/images/news_img/67535/x_men_67535.jpg" alt="">
+              <div class="inbox-header">
+                <h5>Jack Hemsley</h5>
+                <h5 class="time">Today, 15:20</h5>
+                <p>Hey dude, I love the latest pins you added to your new board...</p>
+              </div>
+            </nav>
+            <nav class="e-mail">
+              <img src="http://www.workman.com/blog/wp-content/uploads/2014/12/Hi-Red-Panda.jpg" alt="">
+              <div class="inbox-header">
+                <h5>Jack Hemsley</h5>
+                <h5 class="time">Today, 15:20</h5>
+                <p>Hey dude, I love the latest pins you added to your new board...</p>
+              </div>
+            </nav>
+            <div class="footer">
+              <span>see all</span>
+            </div>
+          </div>
+        </a></li>
+
       </ul>
+
       <nav class="pull-right">
         <i class="fa fa-search"></i>
         <i class="fa fa-plus-circle"></i>
@@ -156,13 +181,19 @@
             </div>
           </div>
           <aside id="pf-right">
-            <div class="pic" id="img6">
-              <ul class="stats">
-                <li class="pin"><i class="fa fa-thumb-tack"></i>22</li>
-                <li class="heart"><i class="fa fa-heart"></i>30</li>
-              </ul>
-              <span>Norm Architechture</span>
-            </div>
+            <a href="#">
+              <div class="pic" id="img6">
+                <ul class="stats">
+                  <li class="pin"><i class="fa fa-thumb-tack"></i>22</li>
+                  <li class="heart"><i class="fa fa-heart"></i>30</li>
+                </ul>
+                <div class="hover">
+                  <i class="fa fa-pencil-square-o"></i>
+                  <i class="fa fa-trash-o"></i>
+                </div>
+                <span>Norm Architechture</span>
+              </div>
+            </a>
             <div class="comments">
               <p>Carl von Hoff commented on "
                 <strong>Scandinavian Minimalism</strong>"</p>
