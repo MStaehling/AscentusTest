@@ -102,6 +102,9 @@ a {
               margin: 0 30px;
               border-bottom: solid 1px lightgrey;
               padding-top: 20px;
+              &#last {
+                border-bottom: solid 1px white;
+              }
               img {
                 width: 50px;
                 display: inline-block;
@@ -137,6 +140,7 @@ a {
               padding: 5px 15px 40px;
               border-bottom-left-radius: 10px;
               border-bottom-right-radius: 10px;
+              border-top: solid 1px darkgrey;
               span {
                 color: lightgrey;
                 width: 100%;
