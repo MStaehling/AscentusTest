@@ -183,16 +183,22 @@ a {
 
 // Top Section
 .top {
-  background: url("../images/RedBrickWall.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding-left: 30px;
+  // background: url("../images/RedBrickWall.jpg") no-repeat center center;
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  // background-size: cover;
+  // padding-left: 30px;
   padding-bottom: 50px;
   color: white;
-  p {
-
+  position: relative;
+  .carousel {
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+  }
+  p, h1 {
+padding-left: 30px;
   }
   h1 {
     font-size: 3.5pc;
