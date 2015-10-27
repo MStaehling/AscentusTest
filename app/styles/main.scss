@@ -388,7 +388,8 @@ a {
     }
     #portfolio {
       padding: 10px;
-    //  color: white;
+
+      //  color: white;
       .pic {
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -473,8 +474,10 @@ a {
         }
         .single {
           padding: 10px;
-          #img3 {
-            background-image: url("https://images.unsplash.com/photo-1445445290350-18a3b86e0b5a?q=80&fm=jpg&s=4ca5b01c43928584a67189ea20c0375f");
+          .pic {
+            &#img3 {
+              background-image: url("https://images.unsplash.com/photo-1445445290350-18a3b86e0b5a?q=80&fm=jpg&s=4ca5b01c43928584a67189ea20c0375f");
+            }
           }
         }
       }
@@ -488,6 +491,7 @@ a {
           height: 325px;
           color: white;
           position: relative;
+
           // &::after {
           //   content: '\A';
           //   position: absolute;
