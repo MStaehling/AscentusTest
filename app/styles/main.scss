@@ -389,20 +389,65 @@ a {
     #portfolio {
       padding: 10px;
       color: white;
-      .pic {
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        position: relative;
-        height: 200px;
-        padding: -10px;
-        span {
-          font-size: 2pc;
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          padding: 10px;
+      div {
+        div {
+          a {
+            .pic {
+              -webkit-background-size: cover;
+              -moz-background-size: cover;
+              -o-background-size: cover;
+              background-size: cover;
+              position: relative;
+              height: 200px;
+              padding: -10px;
+              color: white;
+              &::after {
+                content: '\A';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background-color: lightblue;
+                opacity: 0;
+                &:hover {
+                  display: block;
+                }
+              }
+              &:hover {
+                &::after {
+                  opacity: 0.7;
+                }
+                .hover {
+                  display: block;
+                  z-index: 1;
+                  position: absolute;
+                  top: 42%;
+                  left: 30%;
+                  i {
+                    padding: 10px;
+                    font-size: 20px;
+                    color: lightblue;
+                    background-color: white;
+                    border-radius: 20px;
+                    width: 40px;
+                    height: 40px;
+                    text-align: center;
+                  }
+                }
+              }
+              .hover {
+                display: none;
+              }
+              span {
+                font-size: 2pc;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                padding: 10px;
+              }
+            }
+          }
         }
       }
       .stats {
@@ -434,162 +479,169 @@ a {
         }
         .single {
           padding: 10px;
-          #img3 {
-            background-image: url("https://images.unsplash.com/photo-1445445290350-18a3b86e0b5a?q=80&fm=jpg&s=4ca5b01c43928584a67189ea20c0375f");
-          }
-        }
-      }
-      #pf-right {
-        display: inline-block;
-        width: 33%;
-        position: absolute;
-        padding: 10px;
-        #img6 {
-          background-image: url("https://images.unsplash.com/photo-1445437303333-50e823122ca6?q=80&fm=jpg&s=446e576c21b6158089d5edca174dcba6");
-          height: 325px;
-          color: white;
-          position: relative;
-          &::after {
-            content: '\A';
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            background-color: lightblue;
-            opacity: 0;
-            &:hover {
-              display: block;
-            }
-          }
-          &:hover {
-            &::after {
-              opacity: 0.7;
-            }
-            .hover {
-              display: block;
-              z-index: 1;
-              position: absolute;
-              top: 42%;
-              left: 30%;
-              i {
-                padding: 10px;
-                font-size: 20px;
-                color: lightblue;
-                background-color: white;
-                border-radius: 20px;
-                width: 40px;
-                height: 40px;
-                text-align: center;
+          a {
+            .pic {
+              &#img3 {
+                background-image: url("https://images.unsplash.com/photo-1445445290350-18a3b86e0b5a?q=80&fm=jpg&s=4ca5b01c43928584a67189ea20c0375f");
+              }
+              &:hover {
+                .hover {
+                  left: 40% !important;
+                }
               }
             }
           }
-          .hover {
-            display: none;
-          }
         }
-        .comments {
-          background-color: #f5f5f5;
-          color: black;
-          margin-top: 20px;
-          p {
-            width: 80%;
-            margin-left: 10%;
-            border-bottom: solid 1px lightgrey;
-            padding: 10px 0;
+        #pf-right {
+          display: inline-block;
+          width: 33%;
+          position: absolute;
+          padding: 10px;
+          #img6 {
+            background-image: url("https://images.unsplash.com/photo-1445437303333-50e823122ca6?q=80&fm=jpg&s=446e576c21b6158089d5edca174dcba6");
+            height: 325px;
+
+            // &::after {
+            //   content: '\A';
+            //   position: absolute;
+            //   width: 100%;
+            //   height: 100%;
+            //   top: 0;
+            //   left: 0;
+            //   background-color: lightblue;
+            //   opacity: 0;
+            //   &:hover {
+            //     display: block;
+            //   }
+            // }
+            // &:hover {
+            //   &::after {
+            //     opacity: 0.7;
+            //   }
+            //   .hover {
+            //     display: block;
+            //     z-index: 1;
+            //     position: absolute;
+            //     top: 42%;
+            //     left: 30%;
+            //     i {
+            //       padding: 10px;
+            //       font-size: 20px;
+            //       color: lightblue;
+            //       background-color: white;
+            //       border-radius: 20px;
+            //       width: 40px;
+            //       height: 40px;
+            //       text-align: center;
+            //     }
+            //   }
+            // }
+            // .hover {
+            //   display: none;
+            // }
+          }
+          .comments {
+            background-color: #f5f5f5;
+            color: black;
+            margin-top: 20px;
+            p {
+              width: 80%;
+              margin-left: 10%;
+              border-bottom: solid 1px lightgrey;
+              padding: 10px 0;
+            }
           }
         }
       }
     }
   }
-}
-li {
-  list-style: none;
-}
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
-
-/* Space out content a bit */
-body {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-
-  /* Make the masthead heading the same height as the navigation */
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
+  li {
+    list-style: none;
   }
-}
-
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
-}
-.container-narrow > hr {
-  margin: 30px 0;
-}
-
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-  .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-  }
-}
-
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-  p + h4 {
-    margin-top: 28px;
-  }
-}
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
+  .browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
   }
 
-  /* Remove the padding we set earlier */
+  /* Space out content a bit */
+  body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  /* Everything but the jumbotron gets side spacing for mobile first views */
   .header,
   .marketing,
   .footer {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
-  /* Space out the masthead */
+  /* Custom page header */
   .header {
+    border-bottom: 1px solid #e5e5e5;
 
-    //  margin-bottom: 30px;
+    /* Make the masthead heading the same height as the navigation */
+    h3 {
+      margin-top: 0;
+      margin-bottom: 0;
+      line-height: 40px;
+      padding-bottom: 19px;
+    }
   }
 
-  /* Remove the bottom border on the jumbotron for visual effect */
+  /* Custom page footer */
+  .footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+  }
+  .container-narrow > hr {
+    margin: 30px 0;
+  }
+
+  /* Main marketing message and sign up button */
   .jumbotron {
-    border-bottom: 0;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+    .btn {
+      font-size: 21px;
+      padding: 14px 24px;
+    }
   }
-}
+
+  /* Supporting marketing content */
+  .marketing {
+    margin: 40px 0;
+    p + h4 {
+      margin-top: 28px;
+    }
+  }
+
+  /* Responsive: Portrait tablets and up */
+  @media screen and (min-width: 768px) {
+    .container {
+      max-width: 730px;
+    }
+
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    /* Space out the masthead */
+    .header {
+
+      //  margin-bottom: 30px;
+    }
+
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+      border-bottom: 0;
+    }
+  }
