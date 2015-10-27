@@ -397,6 +397,7 @@ a {
         position: relative;
         height: 200px;
         padding: -10px;
+        color: white;
         &::after {
           content: '\A';
           position: absolute;
@@ -485,7 +486,6 @@ a {
         #img6 {
           background-image: url("https://images.unsplash.com/photo-1445437303333-50e823122ca6?q=80&fm=jpg&s=446e576c21b6158089d5edca174dcba6");
           height: 325px;
-          color: white;
           // &::after {
           //   content: '\A';
           //   position: absolute;
