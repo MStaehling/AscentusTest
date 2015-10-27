@@ -183,6 +183,7 @@ a {
 
 // Top Section
 .top {
+
   // background: url("../images/RedBrickWall.jpg") no-repeat center center;
   // -webkit-background-size: cover;
   // -moz-background-size: cover;
@@ -196,15 +197,25 @@ a {
     z-index: -1;
     position: absolute;
     height: 100%;
+    .carousel-inner {
+      position: relative;
+      height: 100%;
+      .item {
+        height: 100%;
+        img {
+          object-fit: cover;
+          width: 100%;
+          max-height: 100%;
+        }
+      }
+    }
   }
-  p, h1 {
-padding-left: 30px;
+  p,
+  h1 {
+    padding-left: 30px;
   }
   h1 {
     font-size: 3.5pc;
-  }
-  #slide {
-    text-align: center;
   }
 }
 
@@ -291,18 +302,8 @@ padding-left: 30px;
         padding: 10px;
         &.left {
           margin-right: 49.75%;
-          //border-right: solid 1px lightgrey;
           position: relative;
           display: inline-block;
-          &::before {
-            // content: 'k';
-            // color: black;
-            // position: absolute;
-            // border-right: solid 1px black;
-            // width: 10px;
-            // top: 0;
-            // right: -1px;
-          }
           i {
             position: absolute;
             top: 15px;
@@ -311,7 +312,6 @@ padding-left: 30px;
         }
         &.right {
           margin-left: 49.8%;
-          // border-left: solid 1px lightgrey;
           position: relative;
           i {
             position: absolute;
